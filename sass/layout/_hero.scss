@@ -27,3 +27,104 @@
 //     text-transform: uppercase;
 //     color: #ffffff;
 //   }
+.hero {
+  text-align: center;
+}
+.overlay {
+  max-width: 1600px;
+  min-height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid transparent;
+  background-color: #0c0e24;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(/images/hero-1x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.main-title {
+  padding-top: 118px;
+  margin-bottom: 30px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 480px) {
+  .overlay {
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .main-title {
+    padding-top: 118px;
+    font-size: 26px;
+    line-height: 1.615;
+    letter-spacing: 0.06em;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 480px),
+  screen and (min-resolution: 192dpi) and (min-width: 480px),
+  screen and (min-resolution: 2dppx) and (min-width: 480px) {
+  .overlay {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images/hero-2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .overlay {
+    max-width: 768px;
+    height: 400px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images/hero_tablet-1x.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .overlay {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images/hero_tablet-2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .overlay {
+    max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images/hero_desk-1x.jpg);
+  }
+  .main-title {
+    padding-top: 200px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .overlay {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images/hero_desk-2x.jpg);
+  }
+}
