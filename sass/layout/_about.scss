@@ -5,10 +5,10 @@
   display: flex;
 }
 
-.about-list .item + .item {
+.about-list .about-list-item + .about-list-item {
   margin-left: 30px;
 }
-.item {
+.about-list-item {
   position: relative;
 }
 .feature {
