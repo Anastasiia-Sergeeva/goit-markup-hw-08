@@ -19,7 +19,7 @@
          <a href="./index.html" class="logo"><span class="logo-accent">Web</span>Studio</a> 
         <button 
         type="button" 
-        class="menu is-open"
+        class="menu"
          aria-expanded="false" 
          aria-controls="menu-container"
           data-menu-button>
@@ -28,7 +28,7 @@
             <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
         </svg>
         </button>
-        <div class="menu-container is-open" id="menu-container" data-menu>
+        <div class="menu-container" id="menu-container" data-menu>
     <ul class="navigation-list">
         <li class="navigation-list-item">
             <a href="./index.html" class="link current">Студия</a>
@@ -119,8 +119,8 @@
               </div>
        </div>
         </section> 
-        <!-- Особенности-->
-        <!-- <section class="main-information">
+        <!-- Особенности -->
+        <section class="main-information"> 
             <div class="container">   
          <ul class="main-info-item">
         <li class="main-info-link icon-antenna">
@@ -143,9 +143,9 @@
     </ul>
     </div>
 
-        </section> -->
+        </section> 
         <!-- чем занимаемся-->
-        <!-- <section class="about">
+        <section class="about">
             <h2 class="about-title">Чем мы занимаемся</h2>
          <div class="container">
             <ul class="about-list">
@@ -170,19 +170,29 @@
         </ul>
         </div>
         
-        </section> -->
+        </section>
         <!-- наша команда-->
         <!-- <section class="team" >
         <h2 class="about-title">Наша команда</h2>
         <div class="container">
         <ul class="team-list">
-            <li class="team-list-item" >
-                <img class="team-list-img" src="./images/img11.jpg" alt="Фото Игоря Демьяненко" width="270">
+            <li class="team-list-item">
+                <picture class="team-list-picture">
+                    <source srcset="./images/team/img1-desk-1x.jpg, ./images/team/img1-desk-2x@2x.jpg 2x"
+                     media="(min-width: 1200px)">
+                    <source srcset="./images/team/img1-tablet-1x.jpg, ./images/team/img1-tablet-2x.jpg 2x"
+                    media="(min-width: 768px)">
+                    <source srcset="./images/team/img1-1x.jpg 1x, ./images/team/img1-2x@2x.jpg 2x" 
+                    media="(min-width: 320px)">
+                    <img class="team-list-img"
+                    src="./images/team/img1.jpg" alt="Фото Игоря Демьяненко">
+                </picture>
+               
                 <h3 class="team-icon">Игорь Демьяненко</h3>
                 <p class="team-description"  lang="en">Product Designer</p>
                 <ul class="social-list">
                     <li class="social-list_item">
-                        <a class="social-list_link" href="">
+                        <a class="social-list_link" href="#">
                             <svg class="social-list_icons">
                                 <use href="./images/symbol-defs.svg#icon-instagram"></use>
                             </svg>
@@ -196,14 +206,14 @@
                 </a>
                  </li>
                     <li class="social-list_item">
-                        <a class="social-list_link" href="">
+                        <a class="social-list_link" href="#">
                             <svg class="social-list_icons">
                                 <use href="./images/symbol-defs.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="social-list_item">
-                        <a class="social-list_link" href="">
+                        <a class="social-list_link" href="#">
                             <svg class="social-list_icons">
                                 <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                             </svg>
@@ -212,7 +222,12 @@
                 </ul>
             </li>
             <li class="team-list-item">
-                <img  class="team-list-img" src="./images/img-1.jpg" alt="Фото Ольги Репиной" width="270">
+                <img  class="team-list-img" 
+                srcset="./images/img2-1x.jpg 1x,
+                ./images/img2-2x.jpg 2x"
+                src="./images/img-1.jpg"
+                 alt="Фото Ольги Репиной"
+                  width="270">
                 <h3 class="team-icon">Ольга Репина</h3>
                 <p class="team-description"  lang="en">Frontend Developer</p>
                 <ul class="social-list">
@@ -231,7 +246,7 @@
                         </a>
                     </li>
                     <li class="social-list_item">
-                        <a class="social-list_link" href="">
+                        <a class="social-list_link" href="#"">
                             <svg class="social-list_icons">
                                 <use href="./images/symbol-defs.svg#icon-facebook"></use>
                             </svg>
@@ -324,7 +339,7 @@
         </div>
         </section> -->
         <!-- наши клиенты-->
-     <!-- <section class="our-clients">
+     <section class="our-clients">
         <h2 class="about-title">Постоянные клиенты</h2>
             <div class="container">
                 <ul class="clients-list">
@@ -361,7 +376,7 @@
                 </ul>
                 
             </div>
-        </section> -->
+        </section>
     </main>
    <!--Подвал-->
    <!-- <footer class="footer">

@@ -20,9 +20,9 @@
   }
 }
 
-.menu {
-  display: none;
-}
+// .menu {
+//   display: none;
+// }
 
 @media screen and (max-width: 767px) {
   .menu {
@@ -37,6 +37,9 @@
   }
   .menu .icon-close {
     display: none;
+  }
+  .icon-menu {
+    display: block;
   }
   .menu.is-open .icon-close {
     display: block;
