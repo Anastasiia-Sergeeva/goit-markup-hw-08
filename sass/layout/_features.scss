@@ -60,7 +60,7 @@
   color: #757575;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .main-info-link {
     width: 450px;
     margin-bottom: 30px;
