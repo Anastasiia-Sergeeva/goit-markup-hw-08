@@ -1,6 +1,6 @@
 .navigation {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 
   &-list .link::after {
     content: "";
@@ -121,7 +121,7 @@
   .menu-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     padding: 0;
     font-weight: 500;
     font-size: 14px;

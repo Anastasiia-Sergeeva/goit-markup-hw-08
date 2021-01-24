@@ -43,6 +43,8 @@
   padding: 0;
   margin-top: 0;
   margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.142;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -134,8 +136,6 @@
 @media screen and (min-width: 768px) {
   .footer-set {
     display: flex;
-    justify-content: center;
-    margin-bottom: 60px;
   }
 
   .footer-item:not(:last-child) {
@@ -145,6 +145,11 @@
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer {
     text-align: center;
+  }
+  .footer-set {
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: 60px;
   }
   .adress-item {
     text-align: center;
@@ -157,8 +162,11 @@
 @media screen and (min-width: 1200px) {
   .foot {
     display: flex;
-    align-items: baseline;
     justify-content: space-between;
+    align-items: baseline;
+  }
+  .footer-set {
+    align-items: baseline;
   }
   .adress-item {
     margin-right: 70px;
